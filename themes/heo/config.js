@@ -1,5 +1,5 @@
 const CONFIG = {
-  HEO_HOME_BANNER_ENABLE: true,
+  HEO_HOME_BANNER_ENABLE: false,
 
   HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
 
@@ -34,22 +34,22 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '안녕하세요🖐️ 저는...',
+    '🔍 탐색과 발견을 잘합니다.',
+    '🤝 상호존중을 실천합니다.',
+    '🏃 운동을 좋아합니다.',
+    '🏠 집돌이입니다.',
+    '🤖️ 유틸리티를 잘 활용합니다.',
+    '🧱 견고한 설계를 추구합니다.'
   ],
 
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
+  HEO_INFO_CARD_URL2: 'https://github.com/laigasus',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
-  HEO_INFO_CARD_TEXT3: '了解更多',
+  HEO_INFO_CARD_URL3: 'https://laigasus.vercel.app',
+  HEO_INFO_CARD_TEXT3: '더 알아보기',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [

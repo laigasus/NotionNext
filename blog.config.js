@@ -6,7 +6,7 @@ const BLOG = {
     'ba2adc2f011c42899c1f9bec68474808',
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 5, // 업데이트 내용 캐시 간격 단위(초), 즉 각 페이지는 5초의 순수한 정적 기간을 가지며 이 기간 동안 몇 번의 방문이 있어도 notion 데이터를 캡처하지 않습니다. 이 값을 높이면 Vercel 자원을 절약하고 동시에 액세스 속도를 높이는 데 도움이 되지만 기사 업데이트가 지연됩니다.
-  THEME: process.env.NEXT_PUBLIC_THEME || 'simple', // 현재 테마는 themes 폴더 아래에서 지원하는 모든 테마를 찾을 수 있습니다. 테마 이름은 example, fukasawa, gitbook, heo, hexo, landing, matery, medium, next , nobelium , plog , simple
+  THEME: process.env.NEXT_PUBLIC_THEME || 'heo', // 현재 테마는 themes 폴더 아래에서 지원하는 모든 테마를 찾을 수 있습니다. 테마 이름은 example, fukasawa, gitbook, heo, hexo, landing, matery, medium, next , nobelium , plog , simple
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 테마 전환 단추를 보일 지 여부입니다
   LANG: process.env.NEXT_PUBLIC_LANG || 'ko-KR', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: process.env.NEXT_PUBLIC_SINCE || '', // 이를 비워 두면 현재 연도가 사용됩니다.
@@ -132,7 +132,7 @@ const BLOG = {
   CAN_COPY: process.env.NEXT_PUBLIC_CAN_COPY || true, // 페이지 콘텐츠 복제가 기본적으로 허용되는지 여부, false로 설정되어 있으면 전체 스택에서 콘텐츠 복제가 금지됩니다.
   // 오른쪽 단추 메뉴 사용자 정의
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU:
-    process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU || true, // 시스템 메뉴를 덮어쓰는 오른쪽 버튼 메뉴 사용자 정의
+    process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU || false, // 시스템 메뉴를 덮어쓰는 오른쪽 버튼 메뉴 사용자 정의
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH ||
     true, // 테마 바꾸기
@@ -294,7 +294,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 걸쇠 모형 주소 @see https://github.com/xiazeyu/live2d-widget-models
   WIDGET_PET_SWITCH_THEME:
-    process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || true, // 블로그 테마를 바꾸려면 애완 동물 걸쇠를 누르십시오
+    process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || false, // 블로그 테마를 바꾸려면 애완 동물 걸쇠를 누르십시오
 
   // 음악 재생 플러그인
   MUSIC_PLAYER: process.env.NEXT_PUBLIC_MUSIC_PLAYER || false, // 음악 재생 플러그인을 사용할 지 여부
@@ -532,7 +532,7 @@ const BLOG = {
 
   // 설정 취소
   AVATAR: process.env.NEXT_PUBLIC_AVATAR || '/avatar.svg', // 저자 프로필 사진, notion의 ICON으로 덮여 있습니다. ICON이 없으면 public 디렉터리 아래의 avatar.png를 가져옵니다
-  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 사이트 제목, notion 의 페이지 제목으로 덮어씁니다. 공백은 두지 마십시오. 그렇지 않으면 서버가 컴파일할 수 없습니다.
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'BLOG', // 사이트 제목, notion 의 페이지 제목으로 덮어씁니다. 공백은 두지 마십시오. 그렇지 않으면 서버가 컴파일할 수 없습니다.
   HOME_BANNER_IMAGE:
     process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || '/bg_image.jpg', // 첫 화면 배경의 큰 그림은 notion 의 표지 그림으로 덮어쓰게 됩니다. 표지 그림이 없으면 코드 안의 /public/bg_image 를 사용합니다. jpg 파일
   DESCRIPTION:

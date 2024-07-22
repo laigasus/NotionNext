@@ -30,10 +30,10 @@ const BLOG = {
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, Blog', // 사이트 키워드는 영문 쉼표로 구분
 
   // 소셜 링크는 공백이 필요하지 않습니다. 예 CONTACT_WEIBO:''
-  CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'okjaeook98@gmail.com', // 이메일 주소 okjaeook98@gmail.com
+  CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '', // 이메일 주소 okjaeook98@gmail.com
   CONTACT_WEIBO: process.env.NEXT_PUBLIC_CONTACT_WEIBO || '', // 你的微博个人主页
   CONTACT_TWITTER: process.env.NEXT_PUBLIC_CONTACT_TWITTER || '', // 你的twitter个人主页
-  CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || 'https://github.com/laigasus', // github https://github.com/laigasus
+  CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || '', // github https://github.com/laigasus
   CONTACT_TELEGRAM: process.env.NEXT_PUBLIC_CONTACT_TELEGRAM || '', // telegram https://t.me/tangly_1024
   CONTACT_LINKEDIN: process.env.NEXT_PUBLIC_CONTACT_LINKEDIN || '', // linkedIn 메인 화면
   CONTACT_INSTAGRAM: process.env.NEXT_PUBLIC_CONTACT_INSTAGRAM || '', // instagram 주소
@@ -513,7 +513,7 @@ const BLOG = {
   },
 
   // RSS订阅
-  ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || true, // RSS 피드를 사용할 지 여부
+  ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || false, // RSS 피드를 사용할 지 여부
   MAILCHIMP_LIST_ID: process.env.MAILCHIMP_LIST_ID || null, // mailichimp 메일 구독자 목록 ID 오픈, 자세한 사용법은 문서 참조
   MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || null, // mailichimp 메일 구독 APIkey 열기
 

@@ -5,7 +5,7 @@ const CONFIG = {
   '기록 보관소입니다.'
   ], // 홈페이지 배너 문구
   
-  HEXO_HOME_NAV_BUTTONS: true, // 홈페이지에 카테고리 대형 아이콘 버튼 표시 여부
+  HEXO_HOME_NAV_BUTTONS: false, // 홈페이지에 카테고리 대형 아이콘 버튼 표시 여부
   // 알려진 미해결 버그로, 모바일에서 true로 설정 시 이미지를 로드하지 못할 수 있습니다. 임시로 false 설정을 권장합니다.
   HEXO_HOME_NAV_BACKGROUND_IMG_FIXED: false, // 홈페이지 배경 이미지가 스크롤 시 고정되는지 여부, true일 경우 스크롤 시 이미지가 움직이지 않음; false일 경우 마우스 스크롤에 따라 움직임
   // '읽기 시작' 버튼 표시 여부

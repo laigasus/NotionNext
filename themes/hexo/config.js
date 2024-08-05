@@ -15,8 +15,8 @@ const CONFIG = {
   HEXO_MENU_INDEX: true, // 홈페이지 표시
   HEXO_MENU_CATEGORY: true, // 카테고리 표시
   HEXO_MENU_TAG: true, // 태그 표시
-  HEXO_MENU_ARCHIVE: false, // 아카이브 표시
-  HEXO_MENU_SEARCH: false, // 검색 표시
+  HEXO_MENU_ARCHIVE: true, // 아카이브 표시
+  HEXO_MENU_SEARCH: true, // 검색 표시
   HEXO_MENU_RANDOM: true, // 랜덤 이동 버튼 표시
   
   HEXO_POST_LIST_COVER: true, // 목록에 글 표지 표시

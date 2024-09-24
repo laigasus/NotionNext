@@ -6,7 +6,7 @@ const BLOG = {
     'ba2adc2f011c42899c1f9bec68474808',
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 5, // 업데이트 내용 캐시 간격 단위(초), 즉 각 페이지는 5초의 순수한 정적 기간을 가지며 이 기간 동안 몇 번의 방문이 있어도 notion 데이터를 캡처하지 않습니다. 이 값을 높이면 Vercel 자원을 절약하고 동시에 액세스 속도를 높이는 데 도움이 되지만 기사 업데이트가 지연됩니다.
-  THEME: process.env.NEXT_PUBLIC_THEME || 'heo', // 현재 테마는 themes 폴더 아래에서 지원하는 모든 테마를 찾을 수 있습니다. 테마 이름은 example, fukasawa, gitbook, heo, hexo, landing, matery, medium, next , nobelium , plog , simple
+  THEME: process.env.NEXT_PUBLIC_THEME || 'matery', // 현재 테마는 themes 폴더 아래에서 지원하는 모든 테마를 찾을 수 있습니다. 테마 이름은 example, fukasawa, gitbook, heo, hexo, landing, matery, medium, next , nobelium , plog , simple
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 테마 전환 단추를 보일 지 여부입니다
   LANG: process.env.NEXT_PUBLIC_LANG || 'ko-KR', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: process.env.NEXT_PUBLIC_SINCE || '', // 이를 비워 두면 현재 연도가 사용됩니다.

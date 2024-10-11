@@ -125,8 +125,9 @@ const BLOG = {
     '/[prefix]': 'LayoutSlug',
     '/[prefix]/[slug]': 'LayoutSlug',
     '/[prefix]/[slug]/[...suffix]': 'LayoutSlug',
-    '/signin': 'LayoutSignIn',
-    '/signup': 'LayoutSignUp'
+    '/auth/result': 'LayoutAuth',
+    '/sign-in/[[...index]]': 'LayoutSignIn',
+    '/sign-up/[[...index]]': 'LayoutSignUp'
   },
 
   CAN_COPY: process.env.NEXT_PUBLIC_CAN_COPY || true, // 페이지 콘텐츠 복제가 기본적으로 허용되는지 여부, false로 설정되어 있으면 전체 스택에서 콘텐츠 복제가 금지됩니다.
